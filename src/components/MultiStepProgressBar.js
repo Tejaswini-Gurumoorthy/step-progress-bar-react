@@ -74,13 +74,6 @@ const MultiStepProgressBar = ({ page, onPageNumberClick }) => {
           )}
         </Step>
       </ProgressBar>
-      <div className="progress-bar-headings-wrapper">
-        <div className="progress-bar-headings">Pet Owner Details</div>
-        <div className="progress-bar-headings">Pet Information</div>
-        <div className="progress-bar-headings">Pet Proof</div>
-        <div className="progress-bar-headings">Pet Medical Records</div>
-        <div className="progress-bar-headings">Terms and Conditions</div>
-      </div>
     </div>
   );
 };

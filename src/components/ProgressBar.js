@@ -29,17 +29,17 @@ function ProgressBar() {
   return (
     <div>
       <div className="stepper-wrapper">
-        <div className={`stepper-item ${activeStep === 1 ? 'active' : 'completed'}`}>
+        <div className={`stepper-item ${activeStep === 1 ? 'active' : (activeStep > 1 ? 'completed' : '')}`}>
           {activeStep === 1 ? (
-            <FontAwesomeIcon icon={faCheck} className="check-icon step-counter" />
+            <div className="step-counter"></div>
           ) : (
-            <div className="step-counter">1</div>
+            <FontAwesomeIcon icon={faCheck} className="check-icon step-counter" />
           )}
           <div className="step-name progress-bar-headings">Pet Owner Details</div>
         </div>
         <div className={`stepper-item ${activeStep === 2 ? 'active' : (activeStep > 2 ? 'completed' : '')}`}>
           {activeStep === 2 ? (
-            <div className="step-counter">2</div>
+            <div className="step-counter"></div>
           ) : (
             <FontAwesomeIcon icon={faCheck} className="check-icon step-counter" />
           )}
@@ -47,7 +47,7 @@ function ProgressBar() {
         </div>
         <div className={`stepper-item ${activeStep === 3 ? 'active' : (activeStep > 3 ? 'completed' : '')}`}>
           {activeStep === 3 ? (
-            <div className="step-counter">3</div>
+            <div className="step-counter"></div>
           ) : (
             <FontAwesomeIcon icon={faCheck} className="check-icon step-counter" />
           )}
@@ -55,7 +55,7 @@ function ProgressBar() {
         </div>
         <div className={`stepper-item ${activeStep === 4 ? 'active' : (activeStep > 4 ? 'completed' : '')}`}>
           {activeStep === 4 ? (
-            <div className="step-counter">4</div>
+            <div className="step-counter"></div>
           ) : (
             <FontAwesomeIcon icon={faCheck} className="check-icon step-counter" />
           )}
@@ -63,7 +63,7 @@ function ProgressBar() {
         </div>
         <div className={`stepper-item ${activeStep === 5 ? 'active' : (activeStep > 5 ? 'completed' : '')}`}>
           {activeStep === 5 ? (
-            <div className="step-counter">5</div>
+            <div className="step-counter"></div>
           ) : (
             <FontAwesomeIcon icon={faCheck} className="check-icon step-counter" />
           )}
